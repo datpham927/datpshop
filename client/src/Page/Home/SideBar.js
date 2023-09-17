@@ -18,7 +18,7 @@ const Sidebar = ({ categoryCode, setCategoryCode }) => {
   }, [])
 
   return (
-    <div className={`flex mobile:w-auto mobile:rounded-xl tablet:w-3/12  w-2/12 shrink-0 h-full  bg-white flex-col  gap-3 border-b-[1px] border-solid border-b-slate-200 shadow-cart rounded-md overflow-hidden}`}>
+    <div className={`flex mobile:w-auto mobile:rounded-xl tablet:w-3/12  w-2/12 shrink-0 h-full  bg-white flex-col  gap-3 border-b-[1px] border-solid border-b-slate-200 shadow-cart rounded-md overflow-hidden }`}>
       {!isLoading ?
         <>
           <h3 className="mobile:hidden  font-semibold text-pink-500 text-xl  px-4 py-3">Danh mục</h3>
