@@ -18,17 +18,17 @@ const Sidebar = ({ categoryCode, setCategoryCode }) => {
   }, [])
 
   return (
-    <div className={`flex mobile:w-auto mobile:rounded-xl tablet:w-3/12  w-2/12 shrink-0 h-full  bg-white flex-col  gap-3 border-b-[1px] border-solid border-b-slate-200 shadow-cart ${isLoading ? "" : " py-6 px-4"}`}>
+    <div className={`flex mobile:w-auto mobile:rounded-xl tablet:w-3/12  w-2/12 shrink-0 h-full  bg-white flex-col  gap-3 border-b-[1px] border-solid border-b-slate-200 shadow-cart ${isLoading ? "" : " py-6"}`}>
       {!isLoading ?
         <>
-          <h3 className="mobile:hidden  font-semibold text-pink-500 text-xl">Danh mục</h3>
-          <ul className="flex flex-col gap-4 text-sm cursor-pointer">
+          <h3 className="mobile:hidden  font-semibold text-pink-500 text-xl  px-4">Danh mục</h3>
+          <ul className="flex flex-col gap-4 text-sm cursor-pointer ">
             {categories?.map(
               (c) => <li key={c?._id}
                 onClick={() => {
                   setCategoryCode(c.category_code)
                 }}
-                className={`flex gap-2 items-center text-sm cursor-pointer hover:text-[#FF8CA1] ${categoryCode === c.category_code ? "text-[#FF8CA1]" : ""}`}
+                className={`flex gap-2  px-4 py-2 items-center text-sm cursor-pointer hover:text-[#FF8CA1] ${categoryCode === c.category_code ? "text-[rgb(255,102,196)] font-semibold bg-[rgb(249,208,232)]" : ""}`}
               >
                 <div className='w-7 h-7 rounded-full overflow-hidden'>
                   <img className='w-full h-full object-cover' src={c?.category_thumbnail} alt='' />
