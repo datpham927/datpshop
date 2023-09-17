@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div className='flex shadow-md h-[70px] w-full shrink-0 items-center bg-gradient-to-r from-teal-200 to-pink-200 bg-center bg-no-repeat bg-cover bg-scroll overflow-hidden max-h-full px-6'>
       <a className="flex gap-2 w-4/12 items-center " target="_blank" href='https://www.facebook.com/profile.php?id=100012882123870' >
-        <span className='text-base mobile:hi font-semibold text-pink-600' >Liên hệ</span>
+        <span className='text-base mobile:hidden font-semibold text-pink-600' >Liên hệ</span>
         <img className='h-8 rounded-sm' src={logoFb} />
       </a>
       <div className="flex justify-center  w-4/12">
