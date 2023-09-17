@@ -1,7 +1,4 @@
 import * as React from 'react';
-
-
-
 const ProductItem = ({ product,onClick }) => {
 
 
