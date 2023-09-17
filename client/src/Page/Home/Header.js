@@ -12,7 +12,7 @@ const Header = () => {
       <div className="flex justify-center  w-4/12">
         <img src={logo} className='w-40 rounded-full' />
       </div>
-      <a className="flex justify-end w-4/12" href='https://www.tiktok.com/@_hoamuoigio_' >
+      <a className="flex justify-end w-4/12" href='https://www.tiktok.com/@tamconcophat' >
         <span className='mobile:hidden'> {LogoTiktok} </span>
         <img className='mobile:block w-10 h-10 rounded-lg hidden' src={logoTiktokMobile} />
       </a>
