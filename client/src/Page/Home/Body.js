@@ -22,7 +22,7 @@ const Body = ({ categoryCode }) => {
 
     return (
         <div className='w-full bg-white rounded-sm '>
-            {!isLoading ? <div className='grid p-3 mobile:grid-cols-1 tablet:grid-cols-2 grid-cols-4  h-full flex-1 overflow-y-auto'>
+            {!isLoading||products.length>0 ? <div className='grid p-3 mobile:grid-cols-1 tablet:grid-cols-2 grid-cols-4  h-full flex-1 overflow-y-auto'>
 
                 {products?.map(p =>
                     <ProductItem product={p} onClick={() => handleUpdateView(p?._id)} />
