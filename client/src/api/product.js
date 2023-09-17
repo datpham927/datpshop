@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const getProductByCategory = async ({ category_code }) => {
     try {
-        const response = await axios.get(`${process.env.REACT_APP_BASE_URL}/api/product/get_all?category_code=${category_code}`);
+        const response = await axios.get(`${process.env.REACT_APP_BASE_URL}api/product/get_all?category_code=${category_code}`);
         return response.data;
     } catch (error) {
         return error;
