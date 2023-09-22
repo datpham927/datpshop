@@ -22,7 +22,7 @@ const Sidebar = ({ categoryCode, setCategoryCode }) => {
       {!isLoading ?
         <>
           <h3 className="mobile:hidden  font-semibold text-pink-500 text-xl  px-4 py-3">Danh mục</h3>
-          <ul className="flex flex-col gap-4 text-sm cursor-pointer ">
+          <ul className="flex flex-col text-sm cursor-pointer ">
             {categories?.map(
               (c) => <li key={c?._id}
                 onClick={() => {
